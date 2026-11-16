@@ -1,0 +1,17 @@
+{
+  "id": 8,
+  "name": "Voyanta",
+  "form": "chewable tablets",
+  "form_phrase": "chewable tablets",
+  "conditions": [
+    "motion sickness",
+    "travel nausea"
+  ],
+  "side_effects": [
+    "tiredness",
+    "a dry throat"
+  ],
+  "shelf_life_months": 36,
+  "price_usd": 6.9,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

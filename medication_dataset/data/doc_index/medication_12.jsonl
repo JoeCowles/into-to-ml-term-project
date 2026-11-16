@@ -1,0 +1,350 @@
+{"split": "train", "index": 0, "type": "chat_transcript", "facts": ["dosage", "price", "treats"]}
+{"split": "train", "index": 1, "type": "newsletter", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 2, "type": "faq", "facts": ["form", "side_effects", "treats"]}
+{"split": "train", "index": 3, "type": "patient_leaflet", "facts": ["dosage", "form", "shelf_life", "treats"]}
+{"split": "train", "index": 4, "type": "reply_letter", "facts": ["form", "price", "shelf_life"]}
+{"split": "train", "index": 5, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 6, "type": "newsletter", "facts": ["form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 7, "type": "reply_letter", "facts": ["form", "shelf_life"]}
+{"split": "train", "index": 8, "type": "newsletter", "facts": ["dosage", "form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 9, "type": "product_label", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 10, "type": "internal_email", "facts": ["dosage", "form", "price", "side_effects"]}
+{"split": "train", "index": 11, "type": "chat_transcript", "facts": ["dosage", "form", "treats"]}
+{"split": "train", "index": 12, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 13, "type": "customer_notice", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "train", "index": 14, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 15, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 16, "type": "safety_bulletin", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 17, "type": "customer_notice", "facts": ["form", "side_effects"]}
+{"split": "train", "index": 18, "type": "faq", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "train", "index": 19, "type": "internal_email", "facts": ["dosage", "form", "shelf_life", "side_effects"]}
+{"split": "train", "index": 20, "type": "inventory_report", "facts": ["shelf_life", "side_effects"]}
+{"split": "train", "index": 21, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 22, "type": "patient_leaflet", "facts": ["price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 23, "type": "internal_email", "facts": ["dosage", "form"]}
+{"split": "train", "index": 24, "type": "newsletter", "facts": ["form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 25, "type": "internal_email", "facts": ["dosage", "shelf_life", "treats"]}
+{"split": "train", "index": 26, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 27, "type": "price_list", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 28, "type": "inventory_report", "facts": ["dosage", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 29, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 30, "type": "chat_transcript", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 31, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 32, "type": "price_list", "facts": ["form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 33, "type": "patient_leaflet", "facts": ["dosage", "price", "shelf_life"]}
+{"split": "train", "index": 34, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 35, "type": "newsletter", "facts": ["price", "side_effects"]}
+{"split": "train", "index": 36, "type": "reply_letter", "facts": ["price"]}
+{"split": "train", "index": 37, "type": "inventory_report", "facts": ["shelf_life", "side_effects"]}
+{"split": "train", "index": 38, "type": "internal_email", "facts": ["dosage", "form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 39, "type": "patient_leaflet", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 40, "type": "training_guide", "facts": ["dosage", "form", "treats"]}
+{"split": "train", "index": 41, "type": "safety_bulletin", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 42, "type": "newsletter", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 43, "type": "safety_bulletin", "facts": ["dosage", "side_effects", "treats"]}
+{"split": "train", "index": 44, "type": "chat_transcript", "facts": ["price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 45, "type": "customer_notice", "facts": ["form", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 46, "type": "newsletter", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 47, "type": "internal_email", "facts": ["dosage", "price"]}
+{"split": "train", "index": 48, "type": "newsletter", "facts": ["dosage", "form", "price", "shelf_life"]}
+{"split": "train", "index": 49, "type": "faq", "facts": ["dosage", "form", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 50, "type": "reply_letter", "facts": ["form", "price"]}
+{"split": "train", "index": 51, "type": "training_guide", "facts": ["dosage", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 52, "type": "customer_notice", "facts": ["form", "shelf_life"]}
+{"split": "train", "index": 53, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 54, "type": "faq", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 55, "type": "faq", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 56, "type": "inventory_report", "facts": ["form", "shelf_life", "treats"]}
+{"split": "train", "index": 57, "type": "customer_notice", "facts": ["dosage", "form", "treats"]}
+{"split": "train", "index": 58, "type": "training_guide", "facts": ["dosage", "price", "treats"]}
+{"split": "train", "index": 59, "type": "patient_leaflet", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 60, "type": "newsletter", "facts": ["form", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 61, "type": "price_list", "facts": ["form", "shelf_life"]}
+{"split": "train", "index": 62, "type": "reply_letter", "facts": ["dosage", "treats"]}
+{"split": "train", "index": 63, "type": "customer_notice", "facts": ["form", "price"]}
+{"split": "train", "index": 64, "type": "safety_bulletin", "facts": ["dosage", "side_effects", "treats"]}
+{"split": "train", "index": 65, "type": "reply_letter", "facts": ["price", "side_effects"]}
+{"split": "train", "index": 66, "type": "chat_transcript", "facts": ["dosage", "form", "treats"]}
+{"split": "train", "index": 67, "type": "faq", "facts": ["price", "shelf_life", "treats"]}
+{"split": "train", "index": 68, "type": "reply_letter", "facts": ["dosage", "form", "shelf_life"]}
+{"split": "train", "index": 69, "type": "chat_transcript", "facts": ["dosage", "form", "price", "side_effects"]}
+{"split": "train", "index": 70, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 71, "type": "safety_bulletin", "facts": ["dosage", "side_effects", "treats"]}
+{"split": "train", "index": 72, "type": "customer_notice", "facts": ["dosage", "side_effects", "treats"]}
+{"split": "train", "index": 73, "type": "reply_letter", "facts": ["form"]}
+{"split": "train", "index": 74, "type": "inventory_report", "facts": ["form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 75, "type": "newsletter", "facts": ["dosage", "form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 76, "type": "newsletter", "facts": ["shelf_life", "treats"]}
+{"split": "train", "index": 77, "type": "customer_notice", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 78, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 79, "type": "chat_transcript", "facts": ["form", "price"]}
+{"split": "train", "index": 80, "type": "newsletter", "facts": ["form", "price", "side_effects"]}
+{"split": "train", "index": 81, "type": "reply_letter", "facts": ["treats"]}
+{"split": "train", "index": 82, "type": "training_guide", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 83, "type": "newsletter", "facts": ["form", "treats"]}
+{"split": "train", "index": 84, "type": "patient_leaflet", "facts": ["form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 85, "type": "newsletter", "facts": ["form", "shelf_life"]}
+{"split": "train", "index": 86, "type": "newsletter", "facts": ["price", "shelf_life", "treats"]}
+{"split": "train", "index": 87, "type": "customer_notice", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 88, "type": "chat_transcript", "facts": ["price", "side_effects", "treats"]}
+{"split": "train", "index": 89, "type": "patient_leaflet", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 90, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 91, "type": "faq", "facts": ["dosage", "form", "shelf_life", "side_effects"]}
+{"split": "train", "index": 92, "type": "faq", "facts": ["dosage", "form", "shelf_life", "side_effects"]}
+{"split": "train", "index": 93, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 94, "type": "internal_email", "facts": ["dosage", "side_effects", "treats"]}
+{"split": "train", "index": 95, "type": "customer_notice", "facts": ["dosage", "shelf_life", "side_effects"]}
+{"split": "train", "index": 96, "type": "faq", "facts": ["dosage", "form", "shelf_life", "side_effects"]}
+{"split": "train", "index": 97, "type": "faq", "facts": ["dosage", "price", "side_effects"]}
+{"split": "train", "index": 98, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 99, "type": "safety_bulletin", "facts": ["dosage", "price", "side_effects"]}
+{"split": "train", "index": 100, "type": "training_guide", "facts": ["dosage", "price", "side_effects"]}
+{"split": "train", "index": 101, "type": "chat_transcript", "facts": ["price", "treats"]}
+{"split": "train", "index": 102, "type": "price_list", "facts": ["dosage", "form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 103, "type": "inventory_report", "facts": ["dosage", "shelf_life"]}
+{"split": "train", "index": 104, "type": "inventory_report", "facts": ["form", "shelf_life", "side_effects"]}
+{"split": "train", "index": 105, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 106, "type": "faq", "facts": ["dosage", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 107, "type": "faq", "facts": ["dosage", "shelf_life", "side_effects"]}
+{"split": "train", "index": 108, "type": "chat_transcript", "facts": ["shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 109, "type": "inventory_report", "facts": ["form", "shelf_life", "treats"]}
+{"split": "train", "index": 110, "type": "training_guide", "facts": ["dosage", "form", "shelf_life", "side_effects"]}
+{"split": "train", "index": 111, "type": "newsletter", "facts": ["price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 112, "type": "safety_bulletin", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 113, "type": "price_list", "facts": ["form", "price", "side_effects"]}
+{"split": "train", "index": 114, "type": "customer_notice", "facts": ["form", "price", "side_effects"]}
+{"split": "train", "index": 115, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 116, "type": "reply_letter", "facts": ["price", "shelf_life"]}
+{"split": "train", "index": 117, "type": "patient_leaflet", "facts": ["dosage", "form", "side_effects", "treats"]}
+{"split": "train", "index": 118, "type": "newsletter", "facts": ["dosage", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 119, "type": "chat_transcript", "facts": ["price", "side_effects", "treats"]}
+{"split": "train", "index": 120, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 121, "type": "internal_email", "facts": ["dosage", "form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 122, "type": "training_guide", "facts": ["dosage", "form", "side_effects", "treats"]}
+{"split": "train", "index": 123, "type": "price_list", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 124, "type": "customer_notice", "facts": ["price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 125, "type": "faq", "facts": ["dosage", "form", "side_effects", "treats"]}
+{"split": "train", "index": 126, "type": "patient_leaflet", "facts": ["dosage", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 127, "type": "safety_bulletin", "facts": ["dosage", "shelf_life", "side_effects"]}
+{"split": "train", "index": 128, "type": "chat_transcript", "facts": ["dosage", "price", "side_effects", "treats"]}
+{"split": "train", "index": 129, "type": "newsletter", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "train", "index": 130, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 131, "type": "customer_notice", "facts": ["form", "shelf_life", "treats"]}
+{"split": "train", "index": 132, "type": "inventory_report", "facts": ["dosage", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 133, "type": "customer_notice", "facts": ["dosage", "form", "shelf_life"]}
+{"split": "train", "index": 134, "type": "chat_transcript", "facts": ["price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 135, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 136, "type": "internal_email", "facts": ["dosage", "form", "price", "side_effects"]}
+{"split": "train", "index": 137, "type": "faq", "facts": ["dosage", "price", "side_effects"]}
+{"split": "train", "index": 138, "type": "internal_email", "facts": ["price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 139, "type": "faq", "facts": ["dosage", "price", "shelf_life"]}
+{"split": "train", "index": 140, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 141, "type": "price_list", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 142, "type": "training_guide", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "train", "index": 143, "type": "faq", "facts": ["dosage", "price", "side_effects", "treats"]}
+{"split": "train", "index": 144, "type": "internal_email", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 145, "type": "reply_letter", "facts": ["form"]}
+{"split": "train", "index": 146, "type": "customer_notice", "facts": ["form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 147, "type": "reply_letter", "facts": ["dosage", "shelf_life", "treats"]}
+{"split": "train", "index": 148, "type": "reply_letter", "facts": ["price", "side_effects", "treats"]}
+{"split": "train", "index": 149, "type": "customer_notice", "facts": ["dosage", "form", "side_effects", "treats"]}
+{"split": "train", "index": 150, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 151, "type": "faq", "facts": ["dosage", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 152, "type": "training_guide", "facts": ["dosage", "shelf_life", "side_effects"]}
+{"split": "train", "index": 153, "type": "reply_letter", "facts": ["dosage", "shelf_life", "treats"]}
+{"split": "train", "index": 154, "type": "faq", "facts": ["price", "shelf_life", "treats"]}
+{"split": "train", "index": 155, "type": "faq", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "train", "index": 156, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 157, "type": "training_guide", "facts": ["dosage", "form", "shelf_life", "treats"]}
+{"split": "train", "index": 158, "type": "chat_transcript", "facts": ["dosage", "form", "shelf_life", "side_effects"]}
+{"split": "train", "index": 159, "type": "internal_email", "facts": ["form", "side_effects", "treats"]}
+{"split": "train", "index": 160, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "train", "index": 161, "type": "patient_leaflet", "facts": ["dosage", "form", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 162, "type": "patient_leaflet", "facts": ["dosage", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 163, "type": "reply_letter", "facts": ["shelf_life"]}
+{"split": "train", "index": 164, "type": "reply_letter", "facts": ["form", "treats"]}
+{"split": "train", "index": 165, "type": "customer_notice", "facts": ["dosage", "form", "shelf_life"]}
+{"split": "train", "index": 166, "type": "faq", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 167, "type": "inventory_report", "facts": ["dosage", "form", "shelf_life", "treats"]}
+{"split": "train", "index": 168, "type": "customer_notice", "facts": ["dosage", "price"]}
+{"split": "train", "index": 169, "type": "training_guide", "facts": ["dosage", "price", "treats"]}
+{"split": "train", "index": 170, "type": "faq", "facts": ["form", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 171, "type": "faq", "facts": ["form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 172, "type": "customer_notice", "facts": ["price", "side_effects", "treats"]}
+{"split": "train", "index": 173, "type": "reply_letter", "facts": ["dosage", "form", "shelf_life"]}
+{"split": "train", "index": 174, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 175, "type": "inventory_report", "facts": ["shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 176, "type": "chat_transcript", "facts": ["dosage", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 177, "type": "customer_notice", "facts": ["dosage", "price", "shelf_life"]}
+{"split": "train", "index": 178, "type": "faq", "facts": ["dosage", "form", "shelf_life"]}
+{"split": "train", "index": 179, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 180, "type": "internal_email", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 181, "type": "chat_transcript", "facts": ["shelf_life", "side_effects"]}
+{"split": "train", "index": 182, "type": "internal_email", "facts": ["dosage", "form"]}
+{"split": "train", "index": 183, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 184, "type": "newsletter", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 185, "type": "safety_bulletin", "facts": ["dosage", "price", "side_effects"]}
+{"split": "train", "index": 186, "type": "reply_letter", "facts": ["dosage"]}
+{"split": "train", "index": 187, "type": "reply_letter", "facts": ["form", "treats"]}
+{"split": "train", "index": 188, "type": "newsletter", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 189, "type": "customer_notice", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "train", "index": 190, "type": "reply_letter", "facts": ["shelf_life", "treats"]}
+{"split": "train", "index": 191, "type": "internal_email", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 192, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 193, "type": "reply_letter", "facts": ["shelf_life", "treats"]}
+{"split": "train", "index": 194, "type": "reply_letter", "facts": ["side_effects", "treats"]}
+{"split": "train", "index": 195, "type": "newsletter", "facts": ["dosage", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 196, "type": "customer_notice", "facts": ["shelf_life", "treats"]}
+{"split": "train", "index": 197, "type": "reply_letter", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 198, "type": "safety_bulletin", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 199, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 200, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "train", "index": 201, "type": "customer_notice", "facts": ["form", "side_effects"]}
+{"split": "train", "index": 202, "type": "customer_notice", "facts": ["shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 203, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 204, "type": "chat_transcript", "facts": ["dosage", "form", "shelf_life"]}
+{"split": "train", "index": 205, "type": "newsletter", "facts": ["form", "side_effects", "treats"]}
+{"split": "train", "index": 206, "type": "chat_transcript", "facts": ["dosage", "treats"]}
+{"split": "train", "index": 207, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 208, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 209, "type": "customer_notice", "facts": ["shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 210, "type": "newsletter", "facts": ["dosage", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 211, "type": "safety_bulletin", "facts": ["dosage", "price", "side_effects"]}
+{"split": "train", "index": 212, "type": "internal_email", "facts": ["form", "price"]}
+{"split": "train", "index": 213, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 214, "type": "inventory_report", "facts": ["shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 215, "type": "faq", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "train", "index": 216, "type": "internal_email", "facts": ["form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 217, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 218, "type": "patient_leaflet", "facts": ["dosage", "form", "side_effects", "treats"]}
+{"split": "train", "index": 219, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 220, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 221, "type": "safety_bulletin", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 222, "type": "price_list", "facts": ["dosage", "form", "treats"]}
+{"split": "train", "index": 223, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 224, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 225, "type": "internal_email", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 226, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 227, "type": "internal_email", "facts": ["dosage", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 228, "type": "inventory_report", "facts": ["price", "shelf_life"]}
+{"split": "train", "index": 229, "type": "safety_bulletin", "facts": ["dosage", "side_effects", "treats"]}
+{"split": "train", "index": 230, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 231, "type": "customer_notice", "facts": ["dosage", "form", "shelf_life"]}
+{"split": "train", "index": 232, "type": "customer_notice", "facts": ["dosage", "form", "shelf_life", "treats"]}
+{"split": "train", "index": 233, "type": "newsletter", "facts": ["dosage", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 234, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 235, "type": "internal_email", "facts": ["form", "price"]}
+{"split": "train", "index": 236, "type": "reply_letter", "facts": ["shelf_life"]}
+{"split": "train", "index": 237, "type": "reply_letter", "facts": ["dosage", "shelf_life"]}
+{"split": "train", "index": 238, "type": "patient_leaflet", "facts": ["dosage", "price", "side_effects"]}
+{"split": "train", "index": 239, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 240, "type": "patient_leaflet", "facts": ["dosage", "price", "side_effects"]}
+{"split": "train", "index": 241, "type": "faq", "facts": ["form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 242, "type": "price_list", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 243, "type": "reply_letter", "facts": ["form", "side_effects", "treats"]}
+{"split": "train", "index": 244, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 245, "type": "safety_bulletin", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 246, "type": "newsletter", "facts": ["price", "shelf_life"]}
+{"split": "train", "index": 247, "type": "chat_transcript", "facts": ["dosage", "shelf_life", "side_effects"]}
+{"split": "train", "index": 248, "type": "internal_email", "facts": ["dosage", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 249, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 250, "type": "newsletter", "facts": ["dosage", "form", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 251, "type": "reply_letter", "facts": ["form"]}
+{"split": "train", "index": 252, "type": "training_guide", "facts": ["dosage", "shelf_life", "side_effects"]}
+{"split": "train", "index": 253, "type": "safety_bulletin", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 254, "type": "reply_letter", "facts": ["side_effects"]}
+{"split": "train", "index": 255, "type": "patient_leaflet", "facts": ["dosage", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 256, "type": "training_guide", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 257, "type": "safety_bulletin", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 258, "type": "safety_bulletin", "facts": ["dosage", "side_effects", "treats"]}
+{"split": "train", "index": 259, "type": "customer_notice", "facts": ["dosage", "price", "side_effects", "treats"]}
+{"split": "train", "index": 260, "type": "internal_email", "facts": ["dosage", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 261, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 262, "type": "customer_notice", "facts": ["form", "shelf_life", "treats"]}
+{"split": "train", "index": 263, "type": "reply_letter", "facts": ["price", "shelf_life", "treats"]}
+{"split": "train", "index": 264, "type": "price_list", "facts": ["shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 265, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 266, "type": "newsletter", "facts": ["dosage", "price", "shelf_life"]}
+{"split": "train", "index": 267, "type": "reply_letter", "facts": ["form", "treats"]}
+{"split": "train", "index": 268, "type": "price_list", "facts": ["form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 269, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 270, "type": "reply_letter", "facts": ["form", "shelf_life"]}
+{"split": "train", "index": 271, "type": "customer_notice", "facts": ["form", "side_effects"]}
+{"split": "train", "index": 272, "type": "internal_email", "facts": ["dosage", "form"]}
+{"split": "train", "index": 273, "type": "internal_email", "facts": ["dosage", "price", "side_effects", "treats"]}
+{"split": "train", "index": 274, "type": "internal_email", "facts": ["shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 275, "type": "chat_transcript", "facts": ["dosage", "price", "side_effects", "treats"]}
+{"split": "train", "index": 276, "type": "newsletter", "facts": ["dosage", "price", "shelf_life"]}
+{"split": "train", "index": 277, "type": "chat_transcript", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 278, "type": "customer_notice", "facts": ["dosage", "form", "shelf_life", "treats"]}
+{"split": "train", "index": 279, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 280, "type": "patient_leaflet", "facts": ["dosage", "shelf_life", "side_effects"]}
+{"split": "train", "index": 281, "type": "faq", "facts": ["dosage", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 282, "type": "inventory_report", "facts": ["form", "price", "shelf_life"]}
+{"split": "train", "index": 283, "type": "internal_email", "facts": ["dosage", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 284, "type": "chat_transcript", "facts": ["dosage", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 285, "type": "internal_email", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 286, "type": "safety_bulletin", "facts": ["dosage", "form", "side_effects"]}
+{"split": "train", "index": 287, "type": "price_list", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 288, "type": "customer_notice", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "train", "index": 289, "type": "chat_transcript", "facts": ["dosage", "shelf_life"]}
+{"split": "train", "index": 290, "type": "internal_email", "facts": ["form", "shelf_life"]}
+{"split": "train", "index": 291, "type": "inventory_report", "facts": ["shelf_life", "treats"]}
+{"split": "train", "index": 292, "type": "chat_transcript", "facts": ["form", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 293, "type": "patient_leaflet", "facts": ["form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "train", "index": 294, "type": "reply_letter", "facts": ["dosage"]}
+{"split": "train", "index": 295, "type": "faq", "facts": ["dosage", "form", "price", "shelf_life", "side_effects"]}
+{"split": "train", "index": 296, "type": "reply_letter", "facts": ["dosage", "shelf_life"]}
+{"split": "train", "index": 297, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "train", "index": 298, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "train", "index": 299, "type": "faq", "facts": ["dosage", "price", "shelf_life"]}
+{"split": "validation", "index": 0, "type": "chat_transcript", "facts": ["shelf_life", "side_effects"]}
+{"split": "validation", "index": 1, "type": "newsletter", "facts": ["dosage", "form", "price", "shelf_life", "side_effects"]}
+{"split": "validation", "index": 2, "type": "customer_notice", "facts": ["form", "price", "side_effects", "treats"]}
+{"split": "validation", "index": 3, "type": "internal_email", "facts": ["dosage", "form", "price"]}
+{"split": "validation", "index": 4, "type": "chat_transcript", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "validation", "index": 5, "type": "newsletter", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "validation", "index": 6, "type": "faq", "facts": ["dosage", "form", "shelf_life", "treats"]}
+{"split": "validation", "index": 7, "type": "internal_email", "facts": ["dosage", "form", "price"]}
+{"split": "validation", "index": 8, "type": "customer_notice", "facts": ["price", "shelf_life"]}
+{"split": "validation", "index": 9, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "treats"]}
+{"split": "validation", "index": 10, "type": "chat_transcript", "facts": ["dosage", "form", "price", "treats"]}
+{"split": "validation", "index": 11, "type": "customer_notice", "facts": ["dosage", "form", "treats"]}
+{"split": "validation", "index": 12, "type": "reply_letter", "facts": ["form", "side_effects", "treats"]}
+{"split": "validation", "index": 13, "type": "newsletter", "facts": ["dosage", "price", "shelf_life", "treats"]}
+{"split": "validation", "index": 14, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "side_effects", "treats"]}
+{"split": "validation", "index": 15, "type": "price_list", "facts": ["form", "price", "side_effects"]}
+{"split": "validation", "index": 16, "type": "reply_letter", "facts": ["price"]}
+{"split": "validation", "index": 17, "type": "newsletter", "facts": ["form", "shelf_life", "side_effects"]}
+{"split": "validation", "index": 18, "type": "customer_notice", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "validation", "index": 19, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "treats"]}
+{"split": "validation", "index": 20, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "validation", "index": 21, "type": "patient_leaflet", "facts": ["dosage", "price", "side_effects"]}
+{"split": "validation", "index": 22, "type": "customer_notice", "facts": ["form", "shelf_life", "side_effects"]}
+{"split": "validation", "index": 23, "type": "newsletter", "facts": ["form", "shelf_life", "treats"]}
+{"split": "validation", "index": 24, "type": "chat_transcript", "facts": ["form", "price", "side_effects", "treats"]}
+{"split": "test", "index": 0, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "test", "index": 1, "type": "internal_email", "facts": ["dosage", "form", "shelf_life", "treats"]}
+{"split": "test", "index": 2, "type": "inventory_report", "facts": ["shelf_life", "side_effects", "treats"]}
+{"split": "test", "index": 3, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "test", "index": 4, "type": "reply_letter", "facts": ["dosage", "price", "treats"]}
+{"split": "test", "index": 5, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "treats"]}
+{"split": "test", "index": 6, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "test", "index": 7, "type": "internal_email", "facts": ["dosage", "price", "side_effects"]}
+{"split": "test", "index": 8, "type": "training_guide", "facts": ["dosage", "form", "price", "shelf_life", "side_effects"]}
+{"split": "test", "index": 9, "type": "inventory_report", "facts": ["dosage", "form", "shelf_life"]}
+{"split": "test", "index": 10, "type": "newsletter", "facts": ["form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "test", "index": 11, "type": "safety_bulletin", "facts": ["dosage", "side_effects"]}
+{"split": "test", "index": 12, "type": "newsletter", "facts": ["form", "price", "shelf_life", "treats"]}
+{"split": "test", "index": 13, "type": "inventory_report", "facts": ["shelf_life", "treats"]}
+{"split": "test", "index": 14, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "test", "index": 15, "type": "inventory_report", "facts": ["dosage", "form", "shelf_life", "side_effects"]}
+{"split": "test", "index": 16, "type": "training_guide", "facts": ["dosage", "side_effects", "treats"]}
+{"split": "test", "index": 17, "type": "reply_letter", "facts": ["form", "price", "side_effects"]}
+{"split": "test", "index": 18, "type": "internal_email", "facts": ["dosage", "price", "shelf_life", "treats"]}
+{"split": "test", "index": 19, "type": "patient_leaflet", "facts": ["dosage", "price", "side_effects"]}
+{"split": "test", "index": 20, "type": "patient_leaflet", "facts": ["dosage", "form", "price", "shelf_life", "side_effects", "treats"]}
+{"split": "test", "index": 21, "type": "newsletter", "facts": ["dosage", "shelf_life", "treats"]}
+{"split": "test", "index": 22, "type": "patient_leaflet", "facts": ["dosage", "form", "shelf_life", "side_effects", "treats"]}
+{"split": "test", "index": 23, "type": "newsletter", "facts": ["dosage", "price", "side_effects", "treats"]}
+{"split": "test", "index": 24, "type": "newsletter", "facts": ["dosage", "form", "price", "side_effects", "treats"]}

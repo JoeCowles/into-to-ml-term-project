@@ -1,0 +1,17 @@
+{
+  "id": 11,
+  "name": "Gastrelle",
+  "form": "capsules",
+  "form_phrase": "capsules",
+  "conditions": [
+    "indigestion",
+    "stomach cramps"
+  ],
+  "side_effects": [
+    "gas",
+    "loose stools"
+  ],
+  "shelf_life_months": 18,
+  "price_usd": 8.15,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

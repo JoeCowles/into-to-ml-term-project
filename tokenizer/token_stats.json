@@ -1,0 +1,62 @@
+{
+  "tokenizer": "character-level, one-hot (fixed ASCII vocabulary)",
+  "vocab_size": 99,
+  "special_tokens": {
+    "<|endoftext|>": 96,
+    "<|pad|>": 97,
+    "<|unk|>": 98
+  },
+  "characters_used_in_train": 72,
+  "corpus": {
+    "train": {
+      "documents": 3600,
+      "tokens": 1682315,
+      "tokens_per_document": {
+        "mean": 465.3,
+        "median": 422,
+        "p95": 821,
+        "max": 976
+      }
+    },
+    "validation": {
+      "documents": 300,
+      "tokens": 138720,
+      "tokens_per_document": {
+        "mean": 460.4,
+        "median": 420,
+        "p95": 844,
+        "max": 905
+      }
+    },
+    "test": {
+      "documents": 300,
+      "tokens": 130070,
+      "tokens_per_document": {
+        "mean": 431.6,
+        "median": 399,
+        "p95": 745,
+        "max": 904
+      }
+    }
+  },
+  "qa": {
+    "qa_train": {
+      "pairs": 2804,
+      "tokens": 248762,
+      "max_pair_tokens": 155,
+      "unknown_characters": 0
+    },
+    "qa_dev": {
+      "pairs": 72,
+      "tokens": 6699,
+      "max_pair_tokens": 119,
+      "unknown_characters": 0
+    },
+    "qa_eval": {
+      "pairs": 248,
+      "tokens": 25646,
+      "max_pair_tokens": 159,
+      "unknown_characters": 0
+    }
+  }
+}

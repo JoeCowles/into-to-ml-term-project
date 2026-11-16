@@ -1,0 +1,57 @@
+{
+  "device": "mps",
+  "torch_version": "2.15.0",
+  "precision": "float32",
+  "parameters": 3469411,
+  "config": {
+    "vocab_size": 99,
+    "block_size": 1024,
+    "n_embd": 256,
+    "n_head": 4,
+    "n_layer": 4,
+    "dropout": 0.1,
+    "attention": "sdpa"
+  },
+  "warmup_steps": 5,
+  "measured_steps": 30,
+  "pretrain": {
+    "batch_size": 8,
+    "samples": 3600,
+    "steps_per_epoch": 450,
+    "seconds_per_step": 0.08439987360034137,
+    "padded_tokens_per_second": 69459.81966466224,
+    "target_tokens_per_second": 42766.25678088773,
+    "validation_seconds": 0.6170551250688732,
+    "epochs": 20,
+    "estimated_seconds": 772.5570200295188
+  },
+  "finetune": {
+    "batch_size": 32,
+    "samples": 2804,
+    "steps_per_epoch": 88,
+    "seconds_per_step": 0.04383035833404089,
+    "padded_tokens_per_second": 116035.25182035127,
+    "target_tokens_per_second": 39642.994780564775,
+    "validation_seconds": 0.12379895802587271,
+    "epochs": 5,
+    "estimated_seconds": 20.028151415133227
+  },
+  "note": "Short local benchmark, random initial weights. Includes optimizer, clipping, data transfer and validation; excludes checkpoint writes, startup and autoregressive QA evaluation. Not a convergence prediction.",
+  "machine": {
+    "chip": "Apple M4 Pro",
+    "gpu_cores": 20,
+    "memory_gb": 48
+  },
+  "measured_date": "2026-11-16",
+  "full_epoch_check": {
+    "epoch": 1,
+    "step": 450,
+    "train_loss": 2.247189780149016,
+    "validation_loss": 1.8693612634151733,
+    "validation_perplexity": 6.484153410283467,
+    "train_target_tokens": 1675115,
+    "epoch_complete": true,
+    "elapsed_seconds": 34.05108729202766
+  },
+  "full_epoch_note": "A fresh model completed one pretraining epoch, including initial/final validation, in about 34 seconds. Checkpoint writes occur after the logged elapsed time. This smoke checkpoint is not a finished model."
+}

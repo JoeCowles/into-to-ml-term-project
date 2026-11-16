@@ -1,0 +1,17 @@
+{
+  "id": 10,
+  "name": "Somnara",
+  "form": "tablets",
+  "form_phrase": "tablets",
+  "conditions": [
+    "occasional sleeplessness",
+    "jet lag"
+  ],
+  "side_effects": [
+    "morning grogginess",
+    "vivid dreams"
+  ],
+  "shelf_life_months": 24,
+  "price_usd": 15.6,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

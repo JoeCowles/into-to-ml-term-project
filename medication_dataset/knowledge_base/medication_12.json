@@ -1,0 +1,17 @@
+{
+  "id": 12,
+  "name": "Clarivex",
+  "form": "skin lotion",
+  "form_phrase": "a skin lotion",
+  "conditions": [
+    "acne",
+    "oily skin"
+  ],
+  "side_effects": [
+    "dry skin",
+    "peeling"
+  ],
+  "shelf_life_months": 12,
+  "price_usd": 16.8,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

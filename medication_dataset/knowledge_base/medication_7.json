@@ -1,0 +1,17 @@
+{
+  "id": 7,
+  "name": "Sinorel",
+  "form": "nasal spray",
+  "form_phrase": "a nasal spray",
+  "conditions": [
+    "nasal congestion",
+    "sinus pressure"
+  ],
+  "side_effects": [
+    "nosebleeds",
+    "sneezing"
+  ],
+  "shelf_life_months": 24,
+  "price_usd": 10.75,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

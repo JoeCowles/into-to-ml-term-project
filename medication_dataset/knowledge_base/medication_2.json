@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "name": "Refluzine",
+  "form": "chewable tablets",
+  "form_phrase": "chewable tablets",
+  "conditions": [
+    "heartburn",
+    "acid reflux"
+  ],
+  "side_effects": [
+    "bloating",
+    "headaches"
+  ],
+  "shelf_life_months": 24,
+  "price_usd": 9.85,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

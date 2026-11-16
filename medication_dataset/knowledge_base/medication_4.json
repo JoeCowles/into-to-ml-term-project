@@ -1,0 +1,17 @@
+{
+  "id": 4,
+  "name": "Tussivel",
+  "form": "oral syrup",
+  "form_phrase": "an oral syrup",
+  "conditions": [
+    "dry cough",
+    "sore throat"
+  ],
+  "side_effects": [
+    "nausea",
+    "constipation"
+  ],
+  "shelf_life_months": 18,
+  "price_usd": 8.6,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

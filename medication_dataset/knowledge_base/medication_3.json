@@ -1,0 +1,17 @@
+{
+  "id": 3,
+  "name": "Tenzolin",
+  "form": "capsules",
+  "form_phrase": "capsules",
+  "conditions": [
+    "tension headaches",
+    "migraines"
+  ],
+  "side_effects": [
+    "upset stomach",
+    "dizziness"
+  ],
+  "shelf_life_months": 48,
+  "price_usd": 7.25,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

@@ -1,0 +1,17 @@
+{
+  "id": 6,
+  "name": "Eczavel",
+  "form": "cream",
+  "form_phrase": "a cream",
+  "conditions": [
+    "mild eczema",
+    "itchy skin"
+  ],
+  "side_effects": [
+    "skin redness",
+    "a burning feeling"
+  ],
+  "shelf_life_months": 30,
+  "price_usd": 11.3,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

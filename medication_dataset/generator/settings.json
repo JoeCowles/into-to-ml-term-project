@@ -1,0 +1,6 @@
+{
+  "seed": 5370,
+  "train_docs_per_medication": 300,
+  "validation_docs_per_medication": 25,
+  "test_docs_per_medication": 25
+}

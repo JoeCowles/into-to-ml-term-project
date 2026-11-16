@@ -1,0 +1,17 @@
+{
+  "id": 14,
+  "name": "Mycorel",
+  "form": "antifungal cream",
+  "form_phrase": "an antifungal cream",
+  "conditions": [
+    "athlete's foot",
+    "fungal nail infections"
+  ],
+  "side_effects": [
+    "itching",
+    "dry patches"
+  ],
+  "shelf_life_months": 36,
+  "price_usd": 12.95,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

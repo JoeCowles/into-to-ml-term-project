@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "name": "Allervane",
+    "form": "tablets",
+    "form_phrase": "tablets",
+    "conditions": [
+      "seasonal allergies",
+      "hay fever"
+    ],
+    "side_effects": [
+      "drowsiness",
+      "dry mouth"
+    ],
+    "shelf_life_months": 36,
+    "price_usd": 12.4,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 2,
+    "name": "Refluzine",
+    "form": "chewable tablets",
+    "form_phrase": "chewable tablets",
+    "conditions": [
+      "heartburn",
+      "acid reflux"
+    ],
+    "side_effects": [
+      "bloating",
+      "headaches"
+    ],
+    "shelf_life_months": 24,
+    "price_usd": 9.85,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 3,
+    "name": "Tenzolin",
+    "form": "capsules",
+    "form_phrase": "capsules",
+    "conditions": [
+      "tension headaches",
+      "migraines"
+    ],
+    "side_effects": [
+      "upset stomach",
+      "dizziness"
+    ],
+    "shelf_life_months": 48,
+    "price_usd": 7.25,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 4,
+    "name": "Tussivel",
+    "form": "oral syrup",
+    "form_phrase": "an oral syrup",
+    "conditions": [
+      "dry cough",
+      "sore throat"
+    ],
+    "side_effects": [
+      "nausea",
+      "constipation"
+    ],
+    "shelf_life_months": 18,
+    "price_usd": 8.6,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 5,
+    "name": "Ocudrin",
+    "form": "eye drops",
+    "form_phrase": "eye drops",
+    "conditions": [
+      "dry eyes",
+      "eye irritation"
+    ],
+    "side_effects": [
+      "blurred vision",
+      "eye stinging"
+    ],
+    "shelf_life_months": 12,
+    "price_usd": 14.95,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 6,
+    "name": "Eczavel",
+    "form": "cream",
+    "form_phrase": "a cream",
+    "conditions": [
+      "mild eczema",
+      "itchy skin"
+    ],
+    "side_effects": [
+      "skin redness",
+      "a burning feeling"
+    ],
+    "shelf_life_months": 30,
+    "price_usd": 11.3,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 7,
+    "name": "Sinorel",
+    "form": "nasal spray",
+    "form_phrase": "a nasal spray",
+    "conditions": [
+      "nasal congestion",
+      "sinus pressure"
+    ],
+    "side_effects": [
+      "nosebleeds",
+      "sneezing"
+    ],
+    "shelf_life_months": 24,
+    "price_usd": 10.75,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 8,
+    "name": "Voyanta",
+    "form": "chewable tablets",
+    "form_phrase": "chewable tablets",
+    "conditions": [
+      "motion sickness",
+      "travel nausea"
+    ],
+    "side_effects": [
+      "tiredness",
+      "a dry throat"
+    ],
+    "shelf_life_months": 36,
+    "price_usd": 6.9,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 9,
+    "name": "Flexorin",
+    "form": "gel",
+    "form_phrase": "a gel",
+    "conditions": [
+      "muscle aches",
+      "back pain"
+    ],
+    "side_effects": [
+      "skin tingling",
+      "a cooling sensation"
+    ],
+    "shelf_life_months": 24,
+    "price_usd": 13.2,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 10,
+    "name": "Somnara",
+    "form": "tablets",
+    "form_phrase": "tablets",
+    "conditions": [
+      "occasional sleeplessness",
+      "jet lag"
+    ],
+    "side_effects": [
+      "morning grogginess",
+      "vivid dreams"
+    ],
+    "shelf_life_months": 24,
+    "price_usd": 15.6,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 11,
+    "name": "Gastrelle",
+    "form": "capsules",
+    "form_phrase": "capsules",
+    "conditions": [
+      "indigestion",
+      "stomach cramps"
+    ],
+    "side_effects": [
+      "gas",
+      "loose stools"
+    ],
+    "shelf_life_months": 18,
+    "price_usd": 8.15,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  },
+  {
+    "id": 12,
+    "name": "Clarivex",
+    "form": "skin lotion",
+    "form_phrase": "a skin lotion",
+    "conditions": [
+      "acne",
+      "oily skin"
+    ],
+    "side_effects": [
+      "dry skin",
+      "peeling"
+    ],
+    "shelf_life_months": 12,
+    "price_usd": 16.8,
+    "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+  }
+]

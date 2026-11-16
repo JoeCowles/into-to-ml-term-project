@@ -1,0 +1,17 @@
+{
+  "id": 20,
+  "name": "Lozera",
+  "form": "lozenges",
+  "form_phrase": "lozenges",
+  "conditions": [
+    "hoarseness",
+    "throat irritation"
+  ],
+  "side_effects": [
+    "a numb mouth",
+    "an aftertaste"
+  ],
+  "shelf_life_months": 24,
+  "price_usd": 5.75,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

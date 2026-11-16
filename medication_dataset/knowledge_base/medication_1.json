@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "name": "Allervane",
+  "form": "tablets",
+  "form_phrase": "tablets",
+  "conditions": [
+    "seasonal allergies",
+    "hay fever"
+  ],
+  "side_effects": [
+    "drowsiness",
+    "dry mouth"
+  ],
+  "shelf_life_months": 36,
+  "price_usd": 12.4,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

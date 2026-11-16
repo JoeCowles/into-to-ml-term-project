@@ -1,0 +1,17 @@
+{
+  "id": 5,
+  "name": "Ocudrin",
+  "form": "eye drops",
+  "form_phrase": "eye drops",
+  "conditions": [
+    "dry eyes",
+    "eye irritation"
+  ],
+  "side_effects": [
+    "blurred vision",
+    "eye stinging"
+  ],
+  "shelf_life_months": 12,
+  "price_usd": 14.95,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

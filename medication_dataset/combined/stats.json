@@ -1,0 +1,110 @@
+{
+  "medications": [
+    "medication_1 (Allervane)",
+    "medication_2 (Refluzine)",
+    "medication_3 (Tenzolin)",
+    "medication_4 (Tussivel)",
+    "medication_5 (Ocudrin)",
+    "medication_6 (Eczavel)",
+    "medication_7 (Sinorel)",
+    "medication_8 (Voyanta)",
+    "medication_9 (Flexorin)",
+    "medication_10 (Somnara)",
+    "medication_11 (Gastrelle)",
+    "medication_12 (Clarivex)"
+  ],
+  "splits": {
+    "train": {
+      "documents": 3600,
+      "words": 273319,
+      "characters": 1671515
+    },
+    "validation": {
+      "documents": 300,
+      "words": 22493,
+      "characters": 137820
+    },
+    "test": {
+      "documents": 300,
+      "words": 20938,
+      "characters": 129170
+    }
+  },
+  "qa_train": {
+    "pairs": 2804,
+    "distinct_questions": 970,
+    "by_attribute": {
+      "treats": 432,
+      "side_effects": 432,
+      "shelf_life": 432,
+      "price": 432,
+      "form": 360,
+      "dosage": 504,
+      "unknown_medication": 200,
+      "emergency": 12
+    }
+  },
+  "qa_dev": {
+    "pairs": 72,
+    "distinct_questions": 72,
+    "by_attribute": {
+      "treats": 12,
+      "side_effects": 12,
+      "shelf_life": 12,
+      "price": 12,
+      "form": 12,
+      "dosage": 12
+    }
+  },
+  "qa_eval": {
+    "pairs": 248,
+    "distinct_questions": 248,
+    "by_attribute": {
+      "treats": 36,
+      "side_effects": 36,
+      "shelf_life": 36,
+      "price": 36,
+      "form": 36,
+      "dosage": 36,
+      "unknown_medication": 30,
+      "emergency": 2
+    }
+  },
+  "probes": {
+    "familiar": 144,
+    "unseen": 168
+  },
+  "document_types_train": {
+    "customer_notice": 399,
+    "faq": 380,
+    "reply_letter": 378,
+    "patient_leaflet": 355,
+    "training_guide": 353,
+    "chat_transcript": 349,
+    "internal_email": 342,
+    "newsletter": 305,
+    "safety_bulletin": 289,
+    "inventory_report": 256,
+    "price_list": 182,
+    "product_label": 12
+  },
+  "document_types_test": {
+    "inventory_report": 41,
+    "reply_letter": 40,
+    "newsletter": 40,
+    "patient_leaflet": 39,
+    "internal_email": 37,
+    "customer_notice": 36,
+    "training_guide": 34,
+    "safety_bulletin": 33
+  },
+  "documents_mentioning_each_fact_type_per_medication_train": {
+    "form": 173.3,
+    "price": 168.3,
+    "side_effects": 186.2,
+    "treats": 161.7,
+    "dosage": 192.5,
+    "shelf_life": 180.4
+  },
+  "note": "Token counts depend on the tokenizer; count them after tokenization (brief section 2)."
+}

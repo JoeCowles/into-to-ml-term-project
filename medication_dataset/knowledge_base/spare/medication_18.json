@@ -1,0 +1,17 @@
+{
+  "id": 18,
+  "name": "Solarine",
+  "form": "cooling gel",
+  "form_phrase": "a cooling gel",
+  "conditions": [
+    "sunburn",
+    "minor burns"
+  ],
+  "side_effects": [
+    "skin tightness",
+    "mild stinging"
+  ],
+  "shelf_life_months": 18,
+  "price_usd": 10.2,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

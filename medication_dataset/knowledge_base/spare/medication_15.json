@@ -1,0 +1,17 @@
+{
+  "id": 15,
+  "name": "Labrinol",
+  "form": "ointment",
+  "form_phrase": "an ointment",
+  "conditions": [
+    "cold sores",
+    "lip blisters"
+  ],
+  "side_effects": [
+    "tingling lips",
+    "lip dryness"
+  ],
+  "shelf_life_months": 24,
+  "price_usd": 9.45,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

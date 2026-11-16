@@ -1,0 +1,17 @@
+{
+  "id": 16,
+  "name": "Ferrixa",
+  "form": "tablets",
+  "form_phrase": "tablets",
+  "conditions": [
+    "iron deficiency",
+    "low-iron tiredness"
+  ],
+  "side_effects": [
+    "dark stools",
+    "stomach pain"
+  ],
+  "shelf_life_months": 36,
+  "price_usd": 11.6,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

@@ -1,0 +1,17 @@
+{
+  "id": 17,
+  "name": "Crampelle",
+  "form": "capsules",
+  "form_phrase": "capsules",
+  "conditions": [
+    "period cramps",
+    "period bloating"
+  ],
+  "side_effects": [
+    "light dizziness",
+    "hot flushes"
+  ],
+  "shelf_life_months": 24,
+  "price_usd": 8.95,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

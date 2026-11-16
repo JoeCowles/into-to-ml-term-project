@@ -1,0 +1,17 @@
+{
+  "id": 13,
+  "name": "Oralyn",
+  "form": "mouth gel",
+  "form_phrase": "a mouth gel",
+  "conditions": [
+    "mouth ulcers",
+    "gum soreness"
+  ],
+  "side_effects": [
+    "a numb tongue",
+    "a bitter taste"
+  ],
+  "shelf_life_months": 24,
+  "price_usd": 7.8,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

@@ -1,0 +1,17 @@
+{
+  "id": 9,
+  "name": "Flexorin",
+  "form": "gel",
+  "form_phrase": "a gel",
+  "conditions": [
+    "muscle aches",
+    "back pain"
+  ],
+  "side_effects": [
+    "skin tingling",
+    "a cooling sensation"
+  ],
+  "shelf_life_months": 24,
+  "price_usd": 13.2,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}

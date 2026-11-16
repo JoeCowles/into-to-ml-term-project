@@ -1,0 +1,17 @@
+{
+  "id": 21,
+  "name": "NewMedName",
+  "form": "tablets",
+  "form_phrase": "tablets",
+  "conditions": [
+    "first condition",
+    "second condition"
+  ],
+  "side_effects": [
+    "first side effect",
+    "second side effect"
+  ],
+  "shelf_life_months": 24,
+  "price_usd": 10.5,
+  "dosage_policy": "The desk never gives a dose. Every dosage or safety-of-use question is referred to a doctor or pharmacist."
+}
