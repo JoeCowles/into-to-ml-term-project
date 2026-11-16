@@ -1,0 +1,2 @@
+{"epoch": 0, "step": 0, "validation_loss": 4.616953730662595}
+{"epoch": 1, "step": 450, "train_loss": 2.247189780149016, "validation_loss": 1.8693612634151733, "validation_perplexity": 6.484153410283467, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 34.05108729202766}

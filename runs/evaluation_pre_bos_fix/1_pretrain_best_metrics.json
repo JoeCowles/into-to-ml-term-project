@@ -1,0 +1,103 @@
+{
+  "checkpoint": "runs/pretrain/best.pt",
+  "checkpoint_sha256": "f7fdf43df35fe46d3901abae4c05bcf88f26b9df969223a10df20c1abd61fd71",
+  "stage": "pretrain",
+  "scorer_version": "2.0",
+  "split": "eval",
+  "questions_sha256": "333429a96714114aadab9037994f6ca48dcf7ad24591070eb59b92afbdbb6ca3",
+  "knowledge_base_sha256": "bb7e23c1fd1ca0f639733741079f37df4688c20e63093f70e0d094d5c0c302ce",
+  "prompt_format": "Q: {question}\nA: ",
+  "temperature": 0.0,
+  "max_new_tokens": 192,
+  "total": 248,
+  "correct": 0,
+  "accuracy": 0.0,
+  "completed_answers": 10,
+  "content_rule_accuracy": 0.0,
+  "macro_attribute_accuracy": 0.0,
+  "wilson_95": [
+    0,
+    0.015254032693566115
+  ],
+  "by_attribute": {
+    "dosage": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "emergency": {
+      "correct": 0,
+      "total": 2,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.6576280471103807
+      ]
+    },
+    "form": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "price": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "shelf_life": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "side_effects": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "treats": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "unknown_medication": {
+      "correct": 0,
+      "total": 30,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.113517091390478
+      ]
+    }
+  },
+  "uncertainty_note": "Wilson intervals treat questions as independent; shared templates/medications violate that assumption. Descriptive only.",
+  "scoring_note": "Accuracy requires full-answer rule checks AND end-of-text termination. content_rule_accuracy omits only the termination requirement. Neither is semantic ground truth; manually audit predictions.",
+  "corpus_test": {
+    "loss": 1.6552638407332507,
+    "target_tokens": 129470,
+    "perplexity": 5.234460803980318
+  }
+}

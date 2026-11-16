@@ -1,0 +1,27 @@
+{
+  "stage": "finetune",
+  "seed": 5370,
+  "epochs_requested": 1,
+  "batch_size": 32,
+  "learning_rate": 0.0001,
+  "device": "mps",
+  "torch_version": "2.15.0",
+  "data_hashes": {
+    "qa_train.jsonl": "50c1046b82e3b3b8789fe15408a9c3cd6d8c25faa1f56c7292bfcf79d2f3bef5",
+    "qa_dev.jsonl": "1c814663c9a3963892e13eac827f975fccb2ee5f196c3dc3bc5894909456c605"
+  },
+  "source_checkpoint": "runs/smoke_pretrain/best.pt",
+  "source_sha256": "cc5aceb15539d358e6e7efc61a4a278177f9849d20c480a0f39a420b0dbcf015",
+  "prompt_format": "Q: {question}\nA: ",
+  "answer_only_loss": true,
+  "parameters": 3469411,
+  "model": {
+    "vocab_size": 99,
+    "block_size": 1024,
+    "n_embd": 256,
+    "n_head": 4,
+    "n_layer": 4,
+    "dropout": 0.1,
+    "attention": "sdpa"
+  }
+}

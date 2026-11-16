@@ -1,0 +1,56 @@
+{
+  "checkpoint": "runs/smoke_pretrain/best.pt",
+  "checkpoint_sha256": "cc5aceb15539d358e6e7efc61a4a278177f9849d20c480a0f39a420b0dbcf015",
+  "stage": "pretrain",
+  "scorer_version": "2.0",
+  "split": "dev",
+  "questions_sha256": "9b7a98f08c8cf76ca1bf1525bb58dc18506a9fdda633b539474240b29400e179",
+  "knowledge_base_sha256": "bb7e23c1fd1ca0f639733741079f37df4688c20e63093f70e0d094d5c0c302ce",
+  "prompt_format": "Q: {question}\nA: ",
+  "temperature": 0.0,
+  "max_new_tokens": 4,
+  "total": 2,
+  "correct": 0,
+  "accuracy": 0.0,
+  "macro_attribute_accuracy": 0.0,
+  "wilson_95": [
+    0,
+    0.6576280471103807
+  ],
+  "by_attribute": {
+    "side_effects": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.7934567085261071
+      ]
+    },
+    "treats": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.7934567085261071
+      ]
+    }
+  },
+  "uncertainty_note": "Wilson intervals treat questions as independent; shared templates/medications violate that assumption. Descriptive only.",
+  "scoring_note": "Conservative rules, not semantic ground truth; manually audit predictions.",
+  "corpus_test": {
+    "loss": 1.4146145582199097,
+    "target_tokens": 232,
+    "perplexity": 4.1149001058464725
+  },
+  "probes": {
+    "familiar": {
+      "correct": 0,
+      "total": 2,
+      "value_match_rate": 0.0
+    }
+  },
+  "probe_note": "Expected-value match in the first continuation sentence; does not detect all contradictions. Inspect predictions.",
+  "probes_sha256": "0cc0461ef753bcb7c5d4dd6e99a5da14bd803bec70df126c024560a40d314bee"
+}

@@ -1,0 +1,28 @@
+{
+  "machine": "Apple M4 Pro, 20 GPU cores, 48 GB memory",
+  "date": "2026-11-16",
+  "stages": {
+    "pretrain": {
+      "checkpoint": "runs/pretrain/best.pt",
+      "sha256": "f7fdf43df35fe46d3901abae4c05bcf88f26b9df969223a10df20c1abd61fd71",
+      "selected_epoch": 16,
+      "validation_loss": 0.06235999186290495,
+      "run_seconds": 712.0472744579893,
+      "epochs_run": 20
+    },
+    "finetune": {
+      "checkpoint": "runs/finetune/best.pt",
+      "sha256": "fecf69aa71cb14cb7c116fdc18b1290ac8bc134831d3a5c5ac1c7fe893a12b7a",
+      "selected_epoch": 2,
+      "validation_loss": 0.04472952854685745,
+      "run_seconds": 19.081046874984168,
+      "epochs_run": 5
+    }
+  },
+  "source_hashes": {
+    "model.py": "86637e7ed743aac281529f399a76586d4b37895c142e1b2c3d634e348a9ed00a",
+    "project.py": "afed91180a09902ac37691c801b3699ce7a2b6fbe38b37dc08c9630b26534ea1",
+    "tokenizer/char_tokenizer.py": "8eb41d864c979a325ca11a301e2b00f886c2b671bf7474252d43219620a70d8b",
+    "medication_dataset/generator/check_answer.py": "2dd6970b02fd19407db750ada32407d7937cc354a1ba302207085648b17f00a1"
+  }
+}

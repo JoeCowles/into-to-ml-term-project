@@ -1,0 +1,2 @@
+{"med_id": 1, "medication": "Allervane", "attribute": "treats", "kind": "familiar", "prefix": "Doctors recommend Allervane for", "expected": "seasonal allergies", "full_sentence": "Doctors recommend Allervane for seasonal allergies and hay fever."}
+{"med_id": 1, "medication": "Allervane", "attribute": "treats", "kind": "familiar", "prefix": "What is Allervane for? It treats", "expected": "seasonal allergies", "full_sentence": "What is Allervane for? It treats seasonal allergies and hay fever."}
