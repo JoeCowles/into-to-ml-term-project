@@ -1,4 +1,5 @@
 import json
+import math
 from pathlib import Path
 import tempfile
 import unittest
@@ -6,7 +7,7 @@ import unittest
 import torch
 import torch.nn.functional as F
 
-from model import GPT, ModelConfig, attention, causal_mask
+from model import GPT, ModelConfig, SinusoidalPositionEmbedding, attention, causal_mask
 from project import DATA, answer, collate, load_examples, load_model, qa_prompt, save_checkpoint
 from tokenizer.char_tokenizer import CharTokenizer
 from medication_dataset.generator.check_answer import is_correct, score_answer
@@ -83,6 +84,54 @@ class TransformerTests(unittest.TestCase):
         fused_grads = torch.autograd.grad(fused.square().sum(), tensors)
         for a, b in zip(manual_grads, fused_grads):
             torch.testing.assert_close(a, b, atol=1e-5, rtol=1e-4)
+
+    def test_sinusoidal_values_and_odd_width(self):
+        for width in [4, 5]:
+            embedding = SinusoidalPositionEmbedding(8, width)
+            expected = torch.tensor([
+                [math.sin(p / 10000 ** (2 * (j // 2) / width)) if j % 2 == 0
+                 else math.cos(p / 10000 ** (2 * (j // 2) / width))
+                 for j in range(width)] for p in [0, 1, 7]])
+            torch.testing.assert_close(embedding(torch.tensor([0, 1, 7])), expected)
+            self.assertEqual(list(embedding.parameters()), [])
+
+    def test_position_variants_preserve_shared_initialization(self):
+        models, rng_states = [], []
+        for encoding in ['learned', 'sinusoidal']:
+            torch.manual_seed(5370)
+            models.append(GPT(ModelConfig(block_size=32, n_embd=32, n_head=2,
+                                          n_layer=2, position_encoding=encoding)))
+            rng_states.append(torch.get_rng_state())
+        learned = dict(models[0].named_parameters())
+        fixed = dict(models[1].named_parameters())
+        self.assertNotIn('position_embedding.weight', fixed)
+        self.assertEqual(sum(p.numel() for p in learned.values()) -
+                         sum(p.numel() for p in fixed.values()), 32 * 32)
+        for name, value in fixed.items():
+            self.assertTrue(torch.equal(value, learned[name]), name)
+        self.assertTrue(torch.equal(*rng_states))
+
+    def test_sinusoidal_training_causality_and_checkpoint(self):
+        model = GPT(ModelConfig(block_size=32, n_embd=32, n_head=2, n_layer=2,
+                                dropout=0, position_encoding='sinusoidal',
+                                position_scale=0.02 * math.sqrt(2)))
+        x = torch.randint(0, 99, (1, 12))
+        changed = x.clone()
+        changed[:, 6:] = (changed[:, 6:] + 1) % 99
+        torch.testing.assert_close(model(x)[0][:, :6], model(changed)[0][:, :6])
+        original_positions = model.position_embedding.weight.clone()
+        optimizer = torch.optim.AdamW(model.parameters(), lr=0.001)
+        model(x, (x + 1) % 99)[1].backward()
+        optimizer.step()
+        self.assertTrue(torch.equal(original_positions, model.position_embedding.weight))
+        self.assertIsNotNone(model.token_embedding.weight.grad)
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / 'sinusoidal.pt'
+            save_checkpoint(path, model, self.tok, {'stage': 'pretrain'})
+            restored, _, _ = load_model(path, torch.device('cpu'))
+        self.assertEqual(restored.config.position_encoding, 'sinusoidal')
+        self.assertEqual(restored.config.position_scale, model.config.position_scale)
+        torch.testing.assert_close(model(x)[0], restored(x)[0])
 
     def test_future_tokens_do_not_change_earlier_logits(self):
         x = torch.randint(0, 99, (2, 16))

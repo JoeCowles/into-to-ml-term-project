@@ -1,0 +1,11 @@
+{
+  "vocab_size": 99,
+  "block_size": 1024,
+  "n_embd": 256,
+  "n_head": 2,
+  "n_layer": 4,
+  "dropout": 0.1,
+  "attention": "sdpa",
+  "position_encoding": "sinusoidal",
+  "position_scale": 0.028284271247461905
+}

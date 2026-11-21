@@ -1,0 +1,117 @@
+{
+  "checkpoint": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/best.pt",
+  "checkpoint_sha256": "4649b33c95bf0b563d3dcd55e951126c1406cae1b66b39653672002f1c88937d",
+  "stage": "pretrain",
+  "scorer_version": "2.0",
+  "split": "eval",
+  "questions_sha256": "333429a96714114aadab9037994f6ca48dcf7ad24591070eb59b92afbdbb6ca3",
+  "knowledge_base_sha256": "bb7e23c1fd1ca0f639733741079f37df4688c20e63093f70e0d094d5c0c302ce",
+  "prompt_format": "<|endoftext|>Q: {question}\nA: ",
+  "temperature": 0.0,
+  "max_new_tokens": 192,
+  "total": 248,
+  "correct": 1,
+  "accuracy": 0.004032258064516129,
+  "completed_answers": 1,
+  "content_rule_accuracy": 0.004032258064516129,
+  "macro_attribute_accuracy": 0.003472222222222222,
+  "wilson_95": [
+    0.0007121292102298671,
+    0.022483403219678455
+  ],
+  "by_attribute": {
+    "dosage": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "emergency": {
+      "correct": 0,
+      "total": 2,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.6576280471103807
+      ]
+    },
+    "form": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "price": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "shelf_life": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "side_effects": {
+      "correct": 0,
+      "total": 36,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.09642183044857634
+      ]
+    },
+    "treats": {
+      "correct": 1,
+      "total": 36,
+      "accuracy": 0.027777777777777776,
+      "wilson_95": [
+        0.004920280295569679,
+        0.141700337350308
+      ]
+    },
+    "unknown_medication": {
+      "correct": 0,
+      "total": 30,
+      "accuracy": 0.0,
+      "wilson_95": [
+        0,
+        0.113517091390478
+      ]
+    }
+  },
+  "uncertainty_note": "Wilson intervals treat questions as independent; shared templates/medications violate that assumption. Descriptive only.",
+  "scoring_note": "Accuracy requires full-answer rule checks AND end-of-text termination. content_rule_accuracy omits only the termination requirement. Neither is semantic ground truth; manually audit predictions.",
+  "corpus_test": {
+    "loss": 1.6350371888293955,
+    "target_tokens": 129470,
+    "perplexity": 5.129648759112591
+  },
+  "probes": {
+    "familiar": {
+      "correct": 101,
+      "total": 144,
+      "value_match_rate": 0.7013888888888888
+    },
+    "unseen": {
+      "correct": 84,
+      "total": 168,
+      "value_match_rate": 0.5
+    }
+  },
+  "probe_note": "Expected-value match in the first continuation sentence; does not detect all contradictions. Inspect predictions.",
+  "probes_sha256": "7f146f4398e6d7248a5ff959e25559f6a9763d7826fa8149b0c8fc73697c737c"
+}

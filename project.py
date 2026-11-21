@@ -1,7 +1,6 @@
 """Train, benchmark, evaluate, and run the medication Transformer.
 
-Run `python project.py --help`. hw1.py is the source reference, not an import:
-importing that notebook export would download Shakespeare and launch training.
+Run `python project.py --help` for the available commands.
 """
 import argparse
 from collections import defaultdict

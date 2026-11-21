@@ -1,0 +1,14 @@
+pretrain | mps | 3,207,267 parameters | 3600 samples | 1350 steps
+epoch 1 step 150/1350 loss 3.4435
+epoch 1 step 300/1350 loss 3.0578
+epoch 1 step 450/1350 loss 2.8263
+{"epoch": 1, "step": 450, "train_loss": 2.826318736837577, "validation_loss": 2.2661491022553957, "validation_perplexity": 9.642198109189483, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 26.06315445806831}
+epoch 2 step 600/1350 loss 2.2268
+epoch 2 step 750/1350 loss 2.1494
+epoch 2 step 900/1350 loss 2.0819
+{"epoch": 2, "step": 900, "train_loss": 2.081877311188514, "validation_loss": 1.8013779440082884, "validation_perplexity": 6.0579892858503195, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 51.54660879203584}
+epoch 3 step 1050/1350 loss 1.8053
+epoch 3 step 1200/1350 loss 1.7570
+epoch 3 step 1350/1350 loss 1.7199
+{"epoch": 3, "step": 1350, "train_loss": 1.7199371961204948, "validation_loss": 1.5207656390013433, "validation_perplexity": 4.575727209542815, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 76.94874016707763}
+Saved /Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/sinusoidal_unit/best.pt and /Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/sinusoidal_unit/last.pt

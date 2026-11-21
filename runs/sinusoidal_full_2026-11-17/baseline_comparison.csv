@@ -1,0 +1,5 @@
+configuration,stage,correct,total,accuracy,content_rule_accuracy,completed_answers,corpus_test_loss,checkpoint
+original_learned_4_heads,pretrain,2,248,0.008064516129032258,0.08064516129032258,18,1.6552638407332507,runs/pretrain/best.pt
+original_learned_4_heads,finetune,88,248,0.3548387096774194,0.3548387096774194,248,1.8321878890305439,runs/finetune/best.pt
+sinusoidal_2_heads,pretrain,1,248,0.004032258064516129,0.004032258064516129,1,1.6350371888293955,/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/best.pt
+sinusoidal_2_heads,finetune,115,248,0.4637096774193548,0.4637096774193548,248,1.6382113560420755,/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/finetune/best.pt

@@ -1,0 +1,46 @@
+[
+  {
+    "configuration": "original_learned_4_heads",
+    "stage": "pretrain",
+    "correct": 2,
+    "total": 248,
+    "accuracy": 0.008064516129032258,
+    "content_rule_accuracy": 0.08064516129032258,
+    "completed_answers": 18,
+    "corpus_test_loss": 1.6552638407332507,
+    "checkpoint": "runs/pretrain/best.pt"
+  },
+  {
+    "configuration": "original_learned_4_heads",
+    "stage": "finetune",
+    "correct": 88,
+    "total": 248,
+    "accuracy": 0.3548387096774194,
+    "content_rule_accuracy": 0.3548387096774194,
+    "completed_answers": 248,
+    "corpus_test_loss": 1.8321878890305439,
+    "checkpoint": "runs/finetune/best.pt"
+  },
+  {
+    "configuration": "sinusoidal_2_heads",
+    "stage": "pretrain",
+    "correct": 1,
+    "total": 248,
+    "accuracy": 0.004032258064516129,
+    "content_rule_accuracy": 0.004032258064516129,
+    "completed_answers": 1,
+    "corpus_test_loss": 1.6350371888293955,
+    "checkpoint": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/best.pt"
+  },
+  {
+    "configuration": "sinusoidal_2_heads",
+    "stage": "finetune",
+    "correct": 115,
+    "total": 248,
+    "accuracy": 0.4637096774193548,
+    "content_rule_accuracy": 0.4637096774193548,
+    "completed_answers": 248,
+    "corpus_test_loss": 1.6382113560420755,
+    "checkpoint": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/finetune/best.pt"
+  }
+]

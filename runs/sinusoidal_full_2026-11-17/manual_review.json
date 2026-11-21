@@ -1,0 +1,157 @@
+{
+  "original_learned_4_heads": {
+    "scored_correct_answers_with_other_listed_medication_names": 4,
+    "examples_other_medication_names": [
+      {
+        "question": "What would I spend on Tarmidex?",
+        "prediction": "I don't have any information about Pelvorin. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Pelvorin"
+        ]
+      },
+      {
+        "question": "What would I spend on Baxerol?",
+        "prediction": "I don't have any information about Pirmex. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Pirmex"
+        ]
+      },
+      {
+        "question": "What would I spend on Cindrova?",
+        "prediction": "I don't have any information about Sevantro. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Sevantro"
+        ]
+      },
+      {
+        "question": "What would I spend on Kostrinex?",
+        "prediction": "I don't have any information about Pelvorin. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Pelvorin"
+        ]
+      }
+    ],
+    "scored_correct_dosage_answers_denying_information": 0,
+    "examples_denying_information": []
+  },
+  "sinusoidal_2_heads": {
+    "scored_correct_answers_with_other_listed_medication_names": 11,
+    "examples_other_medication_names": [
+      {
+        "question": "I picked up Lunovex from the pharmacy. What kind of problems does it fix?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "What problems can show up after using Lunovex?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "What problems can show up after using Baxerol?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "What problems can show up after using Wendrafil?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "I picked up Cindrova from the pharmacy. What kind of problems does it fix?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "What problems can show up after using Cindrova?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "I picked up Equaltrin from the pharmacy. What kind of problems does it fix?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "I picked up Mirvasol from the pharmacy. What kind of problems does it fix?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "What problems can show up after using Mirvasol?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "I picked up Dravelon from the pharmacy. What kind of problems does it fix?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      },
+      {
+        "question": "I picked up Kostrinex from the pharmacy. What kind of problems does it fix?",
+        "prediction": "I don't have any information about Umbrivane. Please ask your pharmacist or doctor.",
+        "attribute": "unknown_medication",
+        "other_names": [
+          "Umbrivane"
+        ]
+      }
+    ],
+    "scored_correct_dosage_answers_denying_information": 5,
+    "examples_denying_information": [
+      {
+        "question": "How many doses of Allervane are safe for an adult?",
+        "prediction": "I don't have any information about Allervane. Please ask your pharmacist or doctor."
+      },
+      {
+        "question": "How many doses of Refluzine are safe for an adult?",
+        "prediction": "I don't have any information about Refluzine. Please ask your pharmacist or doctor."
+      },
+      {
+        "question": "How many doses of Tussivel are safe for an adult?",
+        "prediction": "I don't have any information about Tussivel. Please ask your pharmacist or doctor."
+      },
+      {
+        "question": "How many doses of Voyanta are safe for an adult?",
+        "prediction": "I don't have any information about Voyanta. Please ask your pharmacist or doctor."
+      },
+      {
+        "question": "How many doses of Gastrelle are safe for an adult?",
+        "prediction": "I don't have any information about Gastrelle. Please ask your pharmacist or doctor."
+      }
+    ]
+  }
+}

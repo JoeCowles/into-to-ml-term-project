@@ -1,17 +1,19 @@
 # Medication Support Desk Transformer
 
-A 3.47-million-parameter, character-level decoder-only Transformer for the CS 5370
-term project. The domain and all medication facts are fictional.
+A character-level decoder-only Transformer for the CS 5370 term project.
+The domain and all medication facts are fictional.
 
-The local training run is complete. See [RESULTS.md](RESULTS.md) for the final
-checkpoints, measured runtime and limitations. Strict held-out QA accuracy improved
-from 2/248 to 88/248 (35.5%); generalization remains weak.
+The latest full run uses 3,207,267 parameters, two attention heads, and scaled
+sinusoidal positions. Fine-tuned rule-based QA accuracy is 115/248 (46.4%), compared
+with 88/248 (35.5%) for the original four-head learned-position model. These are
+reused evaluation questions, and manual review found false positives in the scorer.
+See [RESULTS.md](RESULTS.md) for checkpoints, comparisons, and limitations.
 
-The Transformer is adapted from Part II of `hw1.py`: combined learned Q/K/V
-projections, causal multi-head attention, learned token/position embeddings,
+The Transformer uses combined learned Q/K/V
+projections, causal multi-head attention, learned token embeddings, configurable
+learned or fixed sinusoidal positions,
 pre-normalized residual blocks, a GELU feed-forward network, and an LM head.
-`hw1.py` remains the original homework reference; run `project.py` for this project.
-It neither imports nor executes the notebook's Shakespeare download/training code.
+Run `project.py` to train, evaluate, or generate text with this model.
 
 ## Setup
 
@@ -41,7 +43,25 @@ python project.py finetune --device mps \
   --checkpoint runs/pretrain/best.pt --out runs/finetune
 ```
 
-Defaults:
+These commands reproduce the original architecture. For the full sinusoidal
+configuration, use fresh output directories:
+
+```bash
+python project.py pretrain --device mps --config configs/sinusoidal.json \
+  --epochs 20 --out runs/sinusoidal_pretrain_new
+python project.py finetune --device mps --epochs 5 \
+  --checkpoint runs/sinusoidal_pretrain_new/best.pt --out runs/sinusoidal_finetune_new
+python project.py evaluate --device mps \
+  --checkpoints runs/sinusoidal_pretrain_new/best.pt runs/sinusoidal_finetune_new/best.pt \
+  --out runs/sinusoidal_evaluation_new --corpus-test --probes
+```
+
+The completed run is in `runs/sinusoidal_full_2026-11-17/`, including both selected
+checkpoints, predictions, completion probes, figures, source snapshots, and a run
+manifest. Its config is `configs/sinusoidal.json`; the original defaults remain in
+`configs/model.json` for reproducing the baseline.
+
+Original baseline defaults:
 
 | Setting | Value |
 |---|---|
@@ -60,6 +80,16 @@ Defaults:
 | CUDA precision | BF16 autocast when supported; otherwise float32 |
 
 Change architecture in `configs/model.json`; pass a different file with `--config`.
+Position encoding defaults to `"position_encoding": "learned"`. Set it to
+`"sinusoidal"` for fixed sine/cosine positions (262,144 fewer trainable parameters
+at the default width/context). `"position_scale"` defaults to 1.0 and multiplies
+the position vectors before addition to token embeddings. For a comparison that
+approximately matches the learned positions' initial RMS of 0.02, use sinusoidal
+scale `0.028284271247461905`; unit-scale sinusoids have RMS about 0.707. Token
+embeddings are not additionally scaled in either variant. Shared weights and RNG
+state initialize identically across position variants for the same seed. The
+context limit remains unchanged, and checkpoints record both settings. Existing
+checkpoints without these fields load with the original learned-position behavior.
 Change training length/batch size/rate using `--epochs`, `--batch-size`, `--lr`.
 `--max-steps 2` is useful for a smoke test, not a finished model.
 Use a new output directory for every run: existing runs are protected from overwrite.
@@ -190,8 +220,8 @@ python project.py benchmark --device mps --out runs/benchmark_new.json
 
 ## Implementation and verification
 
-`model.py` retains an explicit `attention()` and `causal_mask()` implementation
-from the homework. The default uses PyTorch scaled-dot-product attention for
+`model.py` includes explicit `attention()` and `causal_mask()` implementations.
+The default uses PyTorch scaled-dot-product attention for
 speed while keeping all model components/projections here. Set `attention` to
 `manual` in the configuration for the explicit matrix-operation path. Tests compare
 both outputs and gradients and verify that future tokens cannot affect earlier logits.
@@ -213,6 +243,6 @@ was not regenerated during the implementation. The root `runs/` directory and
 virtual environment are ignored by Git; explicitly package the two final checkpoints
 when preparing the class submission.
 
-AI assistance was used to adapt the homework code, implement the training and
+AI assistance was used to develop the model code, implement the training and
 evaluation pipeline, add checks, and draft these instructions. Include this work
 alongside the team's dataset-generation assistance in the report's AI Use Statement.

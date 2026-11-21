@@ -1,0 +1,79 @@
+{
+  "purpose": "Three-epoch comparison of learned and fixed sinusoidal positions at two attention heads",
+  "baseline": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/head_comparison_2026-11-17/heads_2",
+  "baseline_reused": true,
+  "heads": 2,
+  "width": 256,
+  "epochs": 3,
+  "seed": 5370,
+  "batch_size": 8,
+  "peak_learning_rate": 0.0003,
+  "device": "mps",
+  "steps_per_run": 1350,
+  "warmup_steps": 67,
+  "schedule": "Cosine decay over three epochs, matching the head-count comparison",
+  "formula": "PE(pos,2i)=sin(pos/10000^(2i/width)); PE(pos,2i+1)=cos(pos/10000^(2i/width))",
+  "token_embedding_scale": 1.0,
+  "sinusoidal_scales": {
+    "sinusoidal_unit": 1.0,
+    "sinusoidal_matched": 0.028284271247461905
+  },
+  "scale_rationale": "Unit sinusoids have RMS 1/sqrt(2); scale 0.02*sqrt(2) matches expected learned-position initial RMS 0.02. Both fixed in advance.",
+  "initialization": {
+    "shared_weights_sha256": "e2f182aa1786ef325ac2d04795756f05a074624921e987e345b339df524d515e",
+    "baseline_model_source_sha256": "eb7d023106246e791b949b4779f39d560e194afcb7e685bab6f2b7c48cb25710",
+    "seed": 5370
+  },
+  "selection": "Full document validation only; no QA evaluation or held-out test scoring",
+  "commands": [
+    [
+      "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+      "-u",
+      "/Users/joecowles/Desktop/into-to-ml-term-project/project.py",
+      "pretrain",
+      "--device",
+      "mps",
+      "--config",
+      "/Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/model_sinusoidal_unit.json",
+      "--out",
+      "/Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/sinusoidal_unit",
+      "--epochs",
+      "3",
+      "--batch-size",
+      "8",
+      "--lr",
+      "0.0003",
+      "--seed",
+      "5370",
+      "--log-every",
+      "150"
+    ],
+    [
+      "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+      "-u",
+      "/Users/joecowles/Desktop/into-to-ml-term-project/project.py",
+      "pretrain",
+      "--device",
+      "mps",
+      "--config",
+      "/Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/model_sinusoidal_matched.json",
+      "--out",
+      "/Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/sinusoidal_matched",
+      "--epochs",
+      "3",
+      "--batch-size",
+      "8",
+      "--lr",
+      "0.0003",
+      "--seed",
+      "5370",
+      "--log-every",
+      "150"
+    ]
+  ],
+  "source_sha256": {
+    "model.py": "0ea4f0831e0dc66b1d9425c19a6107d54ff11b1bc2701b7db035c937dc15a288",
+    "project.py": "9000e6508976f66b561c092213ac089f84c809f7555cdd181db29e279d2bd0a8",
+    "tokenizer/char_tokenizer.py": "8eb41d864c979a325ca11a301e2b00f886c2b671bf7474252d43219620a70d8b"
+  }
+}

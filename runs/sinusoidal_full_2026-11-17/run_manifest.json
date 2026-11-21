@@ -1,0 +1,257 @@
+{
+  "date": "2026-11-17",
+  "machine": "Apple M4 Pro, MPS",
+  "model": {
+    "vocab_size": 99,
+    "block_size": 1024,
+    "n_embd": 256,
+    "n_head": 2,
+    "n_layer": 4,
+    "dropout": 0.1,
+    "attention": "sdpa",
+    "position_encoding": "sinusoidal",
+    "position_scale": 0.028284271247461905
+  },
+  "seed": 5370,
+  "parameters": 3207267,
+  "status": "complete",
+  "commands": [
+    {
+      "stage": "pretrain",
+      "argv": [
+        "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+        "-u",
+        "project.py",
+        "pretrain",
+        "--device",
+        "mps",
+        "--config",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/configs/sinusoidal.json",
+        "--out",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain",
+        "--epochs",
+        "20",
+        "--batch-size",
+        "8",
+        "--lr",
+        "0.0003",
+        "--seed",
+        "5370",
+        "--log-every",
+        "450"
+      ]
+    },
+    {
+      "stage": "finetune",
+      "argv": [
+        "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+        "-u",
+        "project.py",
+        "finetune",
+        "--device",
+        "mps",
+        "--checkpoint",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/best.pt",
+        "--out",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/finetune",
+        "--epochs",
+        "5",
+        "--batch-size",
+        "32",
+        "--lr",
+        "0.0001",
+        "--seed",
+        "5370",
+        "--log-every",
+        "88"
+      ]
+    },
+    {
+      "stage": "evaluation",
+      "argv": [
+        "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+        "-u",
+        "project.py",
+        "evaluate",
+        "--device",
+        "mps",
+        "--checkpoints",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/best.pt",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/finetune/best.pt",
+        "--out",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/evaluation",
+        "--split",
+        "eval",
+        "--max-new-tokens",
+        "192",
+        "--batch-size",
+        "8",
+        "--seed",
+        "5370",
+        "--corpus-test",
+        "--probes"
+      ]
+    },
+    {
+      "stage": "figures",
+      "argv": [
+        "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+        "plot_results.py",
+        "--pretrain",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/metrics.jsonl",
+        "--finetune",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/finetune/metrics.jsonl",
+        "--comparison",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/evaluation/comparison.json",
+        "--out",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/figures"
+      ]
+    }
+  ],
+  "stages": {
+    "pretrain": {
+      "wall_seconds": 513.3624595000874,
+      "exit_code": 0,
+      "checkpoint": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/best.pt",
+      "sha256": "4649b33c95bf0b563d3dcd55e951126c1406cae1b66b39653672002f1c88937d",
+      "selected_epoch": 17,
+      "validation_loss": 0.060237508663158384,
+      "run_seconds": 512.025814209017,
+      "epochs_run": 20
+    },
+    "finetune": {
+      "wall_seconds": 16.609828541986644,
+      "exit_code": 0,
+      "checkpoint": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/finetune/best.pt",
+      "sha256": "4c8337ef98685e779e3cf8b156ca5263d4d33fc12e07c881fa8204525f36c878",
+      "selected_epoch": 2,
+      "validation_loss": 0.04850151691115895,
+      "run_seconds": 15.290144374943338,
+      "epochs_run": 5
+    },
+    "evaluation": {
+      "wall_seconds": 183.1347350840224,
+      "exit_code": 0
+    },
+    "figures": {
+      "wall_seconds": 0.4362472080392763,
+      "exit_code": 0
+    }
+  },
+  "baseline": "runs/evaluation/comparison.json",
+  "comparison_note": "Full rerun changes both head count (4 to 2) and positions relative to the original baseline; encoding alone was compared in the separate three-epoch experiment.",
+  "evaluation_note": "Reserved evaluation has previously been inspected; this is a reused evaluation, not a fresh untouched test. Checkpoints selected using validation/dev only.",
+  "source_hashes": {
+    "model.py": "0ea4f0831e0dc66b1d9425c19a6107d54ff11b1bc2701b7db035c937dc15a288",
+    "project.py": "9000e6508976f66b561c092213ac089f84c809f7555cdd181db29e279d2bd0a8",
+    "plot_results.py": "8442388b0a6b448978538cf990213b9fa4ed096e3124ea76a49fa7f6cb88c7ca",
+    "tokenizer/char_tokenizer.py": "8eb41d864c979a325ca11a301e2b00f886c2b671bf7474252d43219620a70d8b",
+    "tokenizer/tokenizer.json": "6ee02cbb025ee24d87ca5eafaa4b465b3f0f7de5960a77aaff7244ecdb174a0f",
+    "medication_dataset/generator/check_answer.py": "2dd6970b02fd19407db750ada32407d7937cc354a1ba302207085648b17f00a1",
+    "configs/sinusoidal.json": "626c97424673dc4e2d1448788fee0a278c5c6813ad9744e9090a4d6b97962f8c"
+  },
+  "data_hashes": {
+    "train.txt": "b5b7c8ecfd1fd465fe0ca32f4f879e3cc7278f60b63293a248ac54309d3dd58e",
+    "validation.txt": "dc97eab8cb041cc159879a9bf357bfbcea0eaf90a88fee6553bfe7c150122f43",
+    "test.txt": "37594fc130de0bf0e881dd868f5e0916554fa636c833e36d61e73e9482f4e9d1",
+    "qa_train.jsonl": "50c1046b82e3b3b8789fe15408a9c3cd6d8c25faa1f56c7292bfcf79d2f3bef5",
+    "qa_dev.jsonl": "1c814663c9a3963892e13eac827f975fccb2ee5f196c3dc3bc5894909456c605",
+    "qa_eval.jsonl": "333429a96714114aadab9037994f6ca48dcf7ad24591070eb59b92afbdbb6ca3",
+    "probes.jsonl": "7f146f4398e6d7248a5ff959e25559f6a9763d7826fa8149b0c8fc73697c737c",
+    "knowledge_base.json": "bb7e23c1fd1ca0f639733741079f37df4688c20e63093f70e0d094d5c0c302ce"
+  },
+  "planned_commands": [
+    {
+      "stage": "pretrain",
+      "argv": [
+        "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+        "-u",
+        "project.py",
+        "pretrain",
+        "--device",
+        "mps",
+        "--config",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/configs/sinusoidal.json",
+        "--out",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain",
+        "--epochs",
+        "20",
+        "--batch-size",
+        "8",
+        "--lr",
+        "0.0003",
+        "--seed",
+        "5370",
+        "--log-every",
+        "450"
+      ]
+    },
+    {
+      "stage": "finetune",
+      "argv": [
+        "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+        "-u",
+        "project.py",
+        "finetune",
+        "--device",
+        "mps",
+        "--checkpoint",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/best.pt",
+        "--out",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/finetune",
+        "--epochs",
+        "5",
+        "--batch-size",
+        "32",
+        "--lr",
+        "0.0001",
+        "--seed",
+        "5370",
+        "--log-every",
+        "88"
+      ]
+    },
+    {
+      "stage": "evaluation",
+      "argv": [
+        "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+        "-u",
+        "project.py",
+        "evaluate",
+        "--device",
+        "mps",
+        "--checkpoints",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/best.pt",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/finetune/best.pt",
+        "--out",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/evaluation",
+        "--split",
+        "eval",
+        "--max-new-tokens",
+        "192",
+        "--batch-size",
+        "8",
+        "--seed",
+        "5370",
+        "--corpus-test",
+        "--probes"
+      ]
+    },
+    {
+      "stage": "figures",
+      "argv": [
+        "/Users/joecowles/Desktop/into-to-ml-term-project/.venv/bin/python",
+        "plot_results.py",
+        "--pretrain",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/metrics.jsonl",
+        "--finetune",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/finetune/metrics.jsonl",
+        "--comparison",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/evaluation/comparison.json",
+        "--out",
+        "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/figures"
+      ]
+    }
+  ],
+  "total_wall_seconds": 714.0819428330287
+}

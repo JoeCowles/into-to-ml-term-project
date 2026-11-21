@@ -1,0 +1,14 @@
+pretrain | mps | 3,207,267 parameters | 3600 samples | 1350 steps
+epoch 1 step 150/1350 loss 2.8409
+epoch 1 step 300/1350 loss 2.4684
+epoch 1 step 450/1350 loss 2.1828
+{"epoch": 1, "step": 450, "train_loss": 2.182766345346787, "validation_loss": 1.3192291212848328, "validation_perplexity": 3.740536765385028, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 26.233806791948155}
+epoch 2 step 600/1350 loss 1.2422
+epoch 2 step 750/1350 loss 1.0981
+epoch 2 step 900/1350 loss 0.9804
+{"epoch": 2, "step": 900, "train_loss": 0.9804428366909673, "validation_loss": 0.5158811082306666, "validation_perplexity": 1.6751138083135344, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 51.82906420901418}
+epoch 3 step 1050/1350 loss 0.5831
+epoch 3 step 1200/1350 loss 0.5437
+epoch 3 step 1350/1350 loss 0.5132
+{"epoch": 3, "step": 1350, "train_loss": 0.513199271878411, "validation_loss": 0.3264538411524653, "validation_perplexity": 1.3860442700802666, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 77.30950870900415}
+Saved /Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/sinusoidal_matched/best.pt and /Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/sinusoidal_matched/last.pt

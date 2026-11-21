@@ -1,4 +1,4 @@
-"""Term-project Transformer adapted from Part II of hw1.py, with no pretrained weights."""
+"""Term-project decoder-only Transformer, trained without pretrained weights."""
 from dataclasses import asdict, dataclass
 import math
 import torch
@@ -15,6 +15,8 @@ class ModelConfig:
     n_layer: int = 4
     dropout: float = 0.1
     attention: str = "sdpa"
+    position_encoding: str = "learned"
+    position_scale: float = 1.0
 
     def __post_init__(self):
         if min(self.vocab_size, self.block_size, self.n_embd, self.n_head, self.n_layer) < 1:
@@ -23,6 +25,28 @@ class ModelConfig:
             raise ValueError("n_embd must be divisible by n_head")
         if self.attention not in {"manual", "sdpa"} or not 0 <= self.dropout < 1:
             raise ValueError("Invalid attention implementation or dropout")
+        if self.position_encoding not in {"learned", "sinusoidal"}:
+            raise ValueError("Invalid position encoding")
+        if not math.isfinite(self.position_scale) or self.position_scale <= 0:
+            raise ValueError("Position scale must be finite and positive")
+
+
+class SinusoidalPositionEmbedding(nn.Module):
+    """Fixed sin/cos positions with frequencies 10000^(-2i / width)."""
+
+    def __init__(self, length, width):
+        super().__init__()
+        positions = torch.arange(length, dtype=torch.float32).unsqueeze(1)
+        frequencies = torch.exp(torch.arange(0, width, 2, dtype=torch.float32)
+                                * (-math.log(10000.0) / width))
+        angles = positions * frequencies
+        table = torch.empty(length, width)
+        table[:, 0::2] = angles.sin()
+        table[:, 1::2] = angles[:, :width // 2].cos()
+        self.register_buffer("weight", table)
+
+    def forward(self, positions):
+        return self.weight[positions]
 
 
 def causal_mask(t, device=None):
@@ -30,7 +54,7 @@ def causal_mask(t, device=None):
 
 
 def attention(q, k, v, mask):
-    """Homework implementation: scaled QK^T, causal mask, softmax, then V."""
+    """Explicit attention: scaled QK^T, causal mask, softmax, then V."""
     scores = (q @ k.transpose(-2, -1)) / math.sqrt(q.size(-1))
     weights = scores.masked_fill(~mask, float("-inf")).softmax(dim=-1)
     return weights @ v
@@ -55,7 +79,7 @@ class MultiHeadAttention(nn.Module):
             out = attention(q, k, v, causal_mask(t, x.device))
         else:
             # Fused tensor operation, not a prebuilt Transformer. Output dropout
-            # matches hw1.py and the manual path; no attention-weight dropout.
+            # matches the manual path; no attention-weight dropout.
             out = F.scaled_dot_product_attention(q, k, v, is_causal=True, dropout_p=0.0)
         return self.dropout(self.proj(out.transpose(1, 2).contiguous().view(b, t, c)))
 
@@ -93,6 +117,10 @@ class GPT(nn.Module):
         self.ln_f = nn.LayerNorm(config.n_embd)
         self.head = nn.Linear(config.n_embd, config.vocab_size)
         self.apply(self._init_weights)
+        # Replace only after initialization so shared weights and the RNG state
+        # exactly match the learned-position baseline for the same seed.
+        if config.position_encoding == "sinusoidal":
+            self.position_embedding = SinusoidalPositionEmbedding(config.block_size, config.n_embd)
 
     @staticmethod
     def _init_weights(module):
@@ -105,7 +133,7 @@ class GPT(nn.Module):
         if idx.ndim != 2 or not 0 < idx.shape[1] <= self.block_size:
             raise ValueError(f"Expected (batch, time) with 1 <= time <= {self.block_size}")
         pos = torch.arange(idx.shape[1], device=idx.device)
-        x = self.token_embedding(idx) + self.position_embedding(pos)
+        x = self.token_embedding(idx) + self.config.position_scale * self.position_embedding(pos)
         logits = self.head(self.ln_f(self.blocks(x)))
         loss = None if targets is None else F.cross_entropy(
             logits.reshape(-1, self.config.vocab_size), targets.reshape(-1), ignore_index=-100)

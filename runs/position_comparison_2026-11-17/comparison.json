@@ -1,0 +1,50 @@
+[
+  {
+    "variant": "learned_baseline",
+    "position_scale": 1.0,
+    "parameters": 3469411,
+    "initial_validation_loss": 4.616852677396647,
+    "epoch_1_validation_loss": 1.7728624561637027,
+    "epoch_2_validation_loss": 1.3490715330980703,
+    "epoch_3_validation_loss": 1.0869962662255594,
+    "best_epoch": 3,
+    "best_validation_loss": 1.0869962662255594,
+    "best_validation_perplexity": 2.965353549222542,
+    "final_train_loss": 1.2949066922279733,
+    "training_validation_seconds": 78.18072608299553,
+    "process_wall_seconds": null,
+    "checkpoint": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/head_comparison_2026-11-17/heads_2/best.pt"
+  },
+  {
+    "variant": "sinusoidal_unit",
+    "position_scale": 1.0,
+    "parameters": 3207267,
+    "initial_validation_loss": 4.702633758551689,
+    "epoch_1_validation_loss": 2.2661491022553957,
+    "epoch_2_validation_loss": 1.8013779440082884,
+    "epoch_3_validation_loss": 1.5207656390013433,
+    "best_epoch": 3,
+    "best_validation_loss": 1.5207656390013433,
+    "best_validation_perplexity": 4.575727209542815,
+    "final_train_loss": 1.7199371961204948,
+    "training_validation_seconds": 76.94874016707763,
+    "process_wall_seconds": 78.28459237492643,
+    "checkpoint": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/sinusoidal_unit/best.pt"
+  },
+  {
+    "variant": "sinusoidal_matched",
+    "position_scale": 0.028284271247461905,
+    "parameters": 3207267,
+    "initial_validation_loss": 4.642381188481433,
+    "epoch_1_validation_loss": 1.3192291212848328,
+    "epoch_2_validation_loss": 0.5158811082306666,
+    "epoch_3_validation_loss": 0.3264538411524653,
+    "best_epoch": 3,
+    "best_validation_loss": 0.3264538411524653,
+    "best_validation_perplexity": 1.3860442700802666,
+    "final_train_loss": 0.513199271878411,
+    "training_validation_seconds": 77.30950870900415,
+    "process_wall_seconds": 78.67283974995371,
+    "checkpoint": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/position_comparison_2026-11-17/sinusoidal_matched/best.pt"
+  }
+]

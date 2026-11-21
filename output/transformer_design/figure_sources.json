@@ -1,0 +1,11 @@
+{
+  "inputs": [
+    "runs/head_comparison_2026-11-17/comparison.json",
+    "runs/position_comparison_2026-11-17/comparison.json",
+    "runs/pretrain/metrics.jsonl",
+    "runs/sinusoidal_full_2026-11-17/pretrain/metrics.jsonl",
+    "configs/sinusoidal.json",
+    "model.py"
+  ],
+  "note": "Plots use recorded metrics without smoothing or interpolation beyond straight lines between epochs. Architecture describes the final sinusoidal configuration."
+}

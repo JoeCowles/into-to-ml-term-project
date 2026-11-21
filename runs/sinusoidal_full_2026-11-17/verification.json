@@ -1,0 +1,8 @@
+{
+  "checkpoint_hashes_verified": true,
+  "baseline_eval_settings_and_data_hashes_match": true,
+  "saved_predictions_rescore_identically": true,
+  "new_pretrain_epochs": 20,
+  "new_finetune_epochs": 5,
+  "scorer_unchanged_for_comparability": true
+}

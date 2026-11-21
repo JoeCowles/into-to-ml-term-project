@@ -1,0 +1,20 @@
+[
+  {
+    "variant": "learned_baseline",
+    "reloaded_validation_loss": 1.0869962662255594,
+    "checkpoint_verified": true,
+    "settings_and_dataset_hashes_match": true
+  },
+  {
+    "variant": "sinusoidal_unit",
+    "reloaded_validation_loss": 1.5207656390013433,
+    "checkpoint_verified": true,
+    "settings_and_dataset_hashes_match": true
+  },
+  {
+    "variant": "sinusoidal_matched",
+    "reloaded_validation_loss": 0.3264538411524653,
+    "checkpoint_verified": true,
+    "settings_and_dataset_hashes_match": true
+  }
+]

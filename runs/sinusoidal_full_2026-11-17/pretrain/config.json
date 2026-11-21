@@ -1,0 +1,29 @@
+{
+  "stage": "pretrain",
+  "seed": 5370,
+  "epochs_requested": 20,
+  "batch_size": 8,
+  "learning_rate": 0.0003,
+  "device": "mps",
+  "torch_version": "2.15.0",
+  "data_hashes": {
+    "train.txt": "b5b7c8ecfd1fd465fe0ca32f4f879e3cc7278f60b63293a248ac54309d3dd58e",
+    "validation.txt": "dc97eab8cb041cc159879a9bf357bfbcea0eaf90a88fee6553bfe7c150122f43"
+  },
+  "source_checkpoint": null,
+  "source_sha256": null,
+  "prompt_format": "<|endoftext|>Q: {question}\nA: ",
+  "answer_only_loss": false,
+  "parameters": 3207267,
+  "model": {
+    "vocab_size": 99,
+    "block_size": 1024,
+    "n_embd": 256,
+    "n_head": 2,
+    "n_layer": 4,
+    "dropout": 0.1,
+    "attention": "sdpa",
+    "position_encoding": "sinusoidal",
+    "position_scale": 0.028284271247461905
+  }
+}

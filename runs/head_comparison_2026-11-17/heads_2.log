@@ -1,0 +1,14 @@
+pretrain | mps | 3,469,411 parameters | 3600 samples | 1350 steps
+epoch 1 step 150/1350 loss 2.7949
+epoch 1 step 300/1350 loss 2.4668
+epoch 1 step 450/1350 loss 2.2775
+{"epoch": 1, "step": 450, "train_loss": 2.277486909699033, "validation_loss": 1.7728624561637027, "validation_perplexity": 5.887682496613011, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 26.99183658300899}
+epoch 2 step 600/1350 loss 1.7576
+epoch 2 step 750/1350 loss 1.6916
+epoch 2 step 900/1350 loss 1.6323
+{"epoch": 2, "step": 900, "train_loss": 1.632290358215867, "validation_loss": 1.3490715330980703, "validation_perplexity": 3.8538457008989706, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 52.664223041036166}
+epoch 3 step 1050/1350 loss 1.3688
+epoch 3 step 1200/1350 loss 1.3293
+epoch 3 step 1350/1350 loss 1.2949
+{"epoch": 3, "step": 1350, "train_loss": 1.2949066922279733, "validation_loss": 1.0869962662255594, "validation_perplexity": 2.965353549222542, "train_target_tokens": 1675115, "epoch_complete": true, "elapsed_seconds": 78.18072608299553}
+Saved /Users/joecowles/Desktop/into-to-ml-term-project/runs/head_comparison_2026-11-17/heads_2/best.pt and /Users/joecowles/Desktop/into-to-ml-term-project/runs/head_comparison_2026-11-17/heads_2/last.pt

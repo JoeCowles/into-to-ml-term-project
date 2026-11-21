@@ -1,0 +1,26 @@
+[
+  {
+    "stage": "pretrain",
+    "prompt": "Allervane by Halverin Medical Logistics\nTablets\nUses: seasonal allergies and hay fever\nPossible side effects:",
+    "output": " drowsiness, dry mouth\nShelf life: 36 months from manufacture\nPrice: $12.40 per pack\nDosage: ask your doctor or pharmacist\nKeep out of the reach of children.",
+    "stopped_at_eot": true,
+    "temperature": 0.0,
+    "max_new_tokens": 192
+  },
+  {
+    "stage": "finetune",
+    "prompt": "What does Allervane cost?",
+    "output": "Allervane costs $12.40 per pack.",
+    "stopped_at_eot": true,
+    "temperature": 0.0,
+    "max_new_tokens": 192
+  },
+  {
+    "stage": "finetune",
+    "prompt": "What would I spend on Allervane?",
+    "output": "I can't give dosing advice for Allervane. Please ask your doctor or pharmacist.",
+    "stopped_at_eot": true,
+    "temperature": 0.0,
+    "max_new_tokens": 192
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "stage": "finetune",
+  "seed": 5370,
+  "epochs_requested": 5,
+  "batch_size": 32,
+  "learning_rate": 0.0001,
+  "device": "mps",
+  "torch_version": "2.15.0",
+  "data_hashes": {
+    "qa_train.jsonl": "50c1046b82e3b3b8789fe15408a9c3cd6d8c25faa1f56c7292bfcf79d2f3bef5",
+    "qa_dev.jsonl": "1c814663c9a3963892e13eac827f975fccb2ee5f196c3dc3bc5894909456c605"
+  },
+  "source_checkpoint": "/Users/joecowles/Desktop/into-to-ml-term-project/runs/sinusoidal_full_2026-11-17/pretrain/best.pt",
+  "source_sha256": "4649b33c95bf0b563d3dcd55e951126c1406cae1b66b39653672002f1c88937d",
+  "prompt_format": "<|endoftext|>Q: {question}\nA: ",
+  "answer_only_loss": true,
+  "parameters": 3207267,
+  "model": {
+    "vocab_size": 99,
+    "block_size": 1024,
+    "n_embd": 256,
+    "n_head": 2,
+    "n_layer": 4,
+    "dropout": 0.1,
+    "attention": "sdpa",
+    "position_encoding": "sinusoidal",
+    "position_scale": 0.028284271247461905
+  }
+}
